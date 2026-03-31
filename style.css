@@ -16,7 +16,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     margin: 0;
     padding: 2rem 1rem;
     overflow-x: hidden;
@@ -33,7 +32,7 @@ body {
     --radius: 14px;
     --font-head: 'Syne', sans-serif;
     --font-mono: 'DM Mono', monospace;
-    --transition: 0.28s cubic-bezier (0.4, 0, 0.2, 1);
+    --transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body::before {
@@ -186,7 +185,7 @@ body::after {
     position: absolute;
     inset: 0;
     background: linear-gradient(120deg transparent 30%, rgba(255,255,255,0.03) 50%, transparent 70%);
-    transform: transform 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .link-item:hover::before {
@@ -270,7 +269,7 @@ body::after {
 }
 
 .link-item:nth-child(1) { animation-delay: 0.1s; }
-.link.item:nth-child(2) { animation-delay: 0.18s; }
+.link-item:nth-child(2) { animation-delay: 0.18s; }
 .link-item:nth-child(3) { animation-delay: 0.26s; }
 .link-item:nth-child(4) { animation-delay: 0.34s; }
 .link-item:nth-child(5) { animation-delay: 0.42s; }
